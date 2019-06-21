@@ -22,9 +22,18 @@
                 </nav>
                 <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
             </header>
-            
-<video playsinline autoplay muted loop  id="myVideo" src="video.mp4"></video>
 
+            <div class="loader">
+                <img src="loading.gif" alt="loading...">
+            </div>
+<video playsinline autoplay muted loop  id="myVideo" src="video.mp4"></video>
+<script>
+    window.addEventListener("load", function(){ 
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+
+</script>
 
 
            
