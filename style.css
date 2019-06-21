@@ -1,6 +1,6 @@
 :root {
-    --background:rgba(220, 220, 220, .80);
-    --text-background:rgba(220, 220, 220, .50);
+    --background:rgba(213, 43, 30, .80);
+    
 }
 
 html {
@@ -109,7 +109,7 @@ header {
 .logo {
     margin: 0;
     margin-top: .2em;
-    width: 10em;
+    width: 2em;
 }
 .nav-toggle {
     display: none;
