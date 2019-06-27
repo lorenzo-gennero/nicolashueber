@@ -39,9 +39,9 @@
   
   .text-padding {
     background: var(--background-padding);
-    padding: .9em;
+    padding: .7em;
     border-radius: 2em;
-    margin: 0em 1em 1em 1em;
+    margin: 1.75em 1em 1em 1em;
   }
 }
 
@@ -63,20 +63,16 @@
   
   .text-padding {
     background: var(--background-padding);
-    padding: 2em;
+    padding: .2em;
     border-radius: 2em;
-    margin: 3em 5em 2em 5em;
+    margin: 1em 5em 1em 5em;
   }
 }
 
 
-
-
-
-
-
-
-
+.info {
+  display: grid;
+}
 
 .content {
   
@@ -142,13 +138,21 @@ main p {
   color: white;
 }
 
-
-
 .money {
   width: auto;
   display: flex;
   justify-content: center;
   height: 100vh;
+}
+
+
+.profile {
+  width: 14em;
+  border-radius: .9em;
+}
+p {
+  font-size: .8em;
+  align-content: center;
 }
 
 
