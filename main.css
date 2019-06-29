@@ -1,6 +1,6 @@
 :root {
     --background: rgba(216, 30, 5, .85);
-    --background-padding: rgba(255, 255, 255, .5);
+    --background-padding: rgba(241, 241, 241, 0.7);
   }
   
   *, *::before, *::after {
@@ -295,7 +295,7 @@ top: 7px;
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
 .nav-toggle-label {
     display: none;
 }
@@ -318,7 +318,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1em;
+    padding: .7em;
 
 }
 
@@ -358,4 +358,86 @@ nav a:hover::before{
 
 #footer-video {
   z-index: 1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sponsors */
+html, body{
+  height: 100%;
+}
+.sponsor-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: var(--background-padding);
+  
+}
+.sporthilfe {
+  width: 10em;
+}
+
+.corvatsch {
+  width: 10em;
+}
+
+.little-sponsor-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.5em;
+  
+}
+
+.funky{
+  width: 2.5em;
+}
+
+
+.smith {
+  width: 4em;
+}
+
+
+.level{
+  width: 1.5em;
+  margin-left: .6em;
+}
+
+.northwave{
+  
+  width: 7em;
+}
+
+.doodah {
+  width: 7em;
+}
+
+
+/* About */
+html, body{
+  height: 100%;
+}
+.about-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
