@@ -162,11 +162,11 @@ main p {
 
 .profile {
   
-  width: 14em;
+  width: 15em;
   display: flex;
   justify-content: center;
-  border-radius: .7em;
-  margin-bottom: .3em;
+  border-radius: 0;
+  margin-bottom: .1em;
 }
 
 p {
