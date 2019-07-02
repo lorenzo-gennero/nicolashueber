@@ -1,5 +1,5 @@
 :root {
-    --background: rgba(216, 30, 5, .85);
+    --background: rgba(216, 30, 5, .20);
     --background-padding: rgba(241, 241, 241, 0.7);
   }
   
@@ -21,7 +21,8 @@
 }
 
 @media only screen and (max-width: 500px) {
-  body {
+  html body {
+    height: 100vh;
   background-image: url(mobile2.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -43,6 +44,16 @@
     background: var(--background-padding);
     border-radius: .8em;
   }
+
+  footer {
+    margin-top: auto;
+    padding: .3em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(226, 235, 242, 0.6);
+  }
 }
 
 @media only screen and (min-width: 501px) {
@@ -60,6 +71,17 @@
     border-radius: 2em;
     margin: 0 2em 0 2em;
   }
+  footer {
+    margin-top: auto;
+    padding: .3em;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--background);
+    
+  }
+  
 }
 
 
@@ -78,11 +100,12 @@
 
   #myVideo {
     margin: 0;
-    position: fixed;
+    padding: 0;
+    background: white;
+    position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    
+    min-width: 100%; 
   }
 
 .loader {
@@ -109,21 +132,11 @@ animation-fill-mode: forwards;
 }
 }
 
-footer {
-  margin-top: auto;
-  color: white;
-  padding: .3em;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  background: var(--background);
 
-  
-}
+
 .social-logos {
   padding: .2px;
   height: .7em;
-  margin-left: .9em;
 }
 
 
@@ -142,17 +155,18 @@ main p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .profile {
   
-  width: 12em;
+  width: 14em;
   display: flex;
   justify-content: center;
-  border-radius: .9em;
+  border-radius: .7em;
+  margin-bottom: .3em;
 }
 
 p {
@@ -196,7 +210,7 @@ p {
 
 
 :root {
-  --background: rgba(216, 30, 5, .85);
+  --background: rgba(216, 30, 5, 0);
 }
 /* Navigation bar start */
 .logo{
@@ -233,14 +247,14 @@ margin-left: 1em;
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: .7rem;
   text-transform: uppercase;
 }
 
 nav a:hover {
-  color: black;
+  color: white;
 }
 
 .nav-toggle:checked ~ nav {
@@ -267,7 +281,7 @@ display: block;
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
 display: block;
-background: white;
+background: black;
 height: 2px;  
 width: 2em;
 border-radius: 2px;
@@ -360,6 +374,10 @@ nav a:hover::before{
   z-index: 1000;
 }
 
+.video-div{
+  height: 100vh;
+}
+
 
 
 
@@ -440,4 +458,22 @@ html, body{
   align-items: center;
   justify-content: center;
   flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+  
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }

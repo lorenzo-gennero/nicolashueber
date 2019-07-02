@@ -10,12 +10,12 @@
 </head>
 <body>
         <header>
-        
-                <img class="logo" src="logo.png" alt=""> 
+    
+    <div class="logo"></div>
                     <input type="checkbox" class="nav-toggle" id="nav-toggle">
                 <nav>
                     <ul>
-                
+                 
                         <li><a href="index.html">Home</a></li>
                         <li><a href="About.html">About</a></li>
                         <li><a href="video.html">Video</a></li>
@@ -28,7 +28,11 @@
             <div class="loader">
                 <img src="loading.gif" alt="loading...">
             </div>
-<video playsinline autoplay muted loop  id="myVideo" src="video.mp4"></video>
+            <div class="video-div">
+<video playsinline autoplay muted loop id="myVideo" src="video.mp4">
+
+</video>
+</div>
 <script>
     window.addEventListener("load", function(){ 
         const loader = document.querySelector(".loader");
