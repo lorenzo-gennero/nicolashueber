@@ -80,6 +80,11 @@
     background: var(--background);
     
   }
+  .profile-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+  }
   
 }
 
